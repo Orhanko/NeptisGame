@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		473FB49A2C616783008399CF /* NeptisGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4992C616783008399CF /* NeptisGameApp.swift */; };
+		473FB49C2C616783008399CF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB49B2C616783008399CF /* LoginView.swift */; };
+		473FB49E2C616785008399CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473FB49D2C616785008399CF /* Assets.xcassets */; };
+		473FB4A12C616785008399CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473FB4A02C616785008399CF /* Preview Assets.xcassets */; };
+		473FB4AF2C616BFC008399CF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 473FB4AE2C616BFC008399CF /* Alamofire */; };
+		473FB4B42C616C21008399CF /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 473FB4B32C616C21008399CF /* SwiftyJSON */; };
+		473FB4B62C616EF0008399CF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4B52C616EF0008399CF /* AppState.swift */; };
+		473FB4B82C616F34008399CF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4B72C616F34008399CF /* RegisterView.swift */; };
+		473FB4BA2C616F94008399CF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4B92C616F94008399CF /* APIService.swift */; };
+		473FB4BC2C617069008399CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4BB2C617069008399CF /* HomeView.swift */; };
+		473FB4BF2C6170A1008399CF /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4BE2C6170A1008399CF /* Recipes.swift */; };
+		473FB4C12C617102008399CF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FB4C02C617102008399CF /* GameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		473FB4962C616783008399CF /* NeptisGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeptisGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		473FB4992C616783008399CF /* NeptisGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptisGameApp.swift; sourceTree = "<group>"; };
+		473FB49B2C616783008399CF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		473FB49D2C616785008399CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		473FB4A02C616785008399CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		473FB4B52C616EF0008399CF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		473FB4B72C616F34008399CF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		473FB4B92C616F94008399CF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		473FB4BB2C617069008399CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		473FB4BE2C6170A1008399CF /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		473FB4C02C617102008399CF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		473FB4932C616783008399CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473FB4B42C616C21008399CF /* SwiftyJSON in Frameworks */,
+				473FB4AF2C616BFC008399CF /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473FB48D2C616783008399CF = {
+			isa = PBXGroup;
+			children = (
+				473FB4982C616783008399CF /* NeptisGame */,
+				473FB4972C616783008399CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		473FB4972C616783008399CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4962C616783008399CF /* NeptisGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		473FB4982C616783008399CF /* NeptisGame */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4A82C6169E2008399CF /* Login */,
+				473FB4A92C6169EA008399CF /* Register */,
+				473FB4AC2C616A28008399CF /* Home */,
+				473FB4AB2C616A05008399CF /* Game */,
+				473FB4A72C6169D2008399CF /* API */,
+				473FB4992C616783008399CF /* NeptisGameApp.swift */,
+				473FB49D2C616785008399CF /* Assets.xcassets */,
+				473FB49F2C616785008399CF /* Preview Content */,
+				473FB4B52C616EF0008399CF /* AppState.swift */,
+				473FB4BE2C6170A1008399CF /* Recipes.swift */,
+			);
+			path = NeptisGame;
+			sourceTree = "<group>";
+		};
+		473FB49F2C616785008399CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4A02C616785008399CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		473FB4A72C6169D2008399CF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4B92C616F94008399CF /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		473FB4A82C6169E2008399CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				473FB49B2C616783008399CF /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		473FB4A92C6169EA008399CF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4B72C616F34008399CF /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		473FB4AB2C616A05008399CF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4C02C617102008399CF /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		473FB4AC2C616A28008399CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				473FB4BB2C617069008399CF /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		473FB4952C616783008399CF /* NeptisGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473FB4A42C616785008399CF /* Build configuration list for PBXNativeTarget "NeptisGame" */;
+			buildPhases = (
+				473FB4922C616783008399CF /* Sources */,
+				473FB4932C616783008399CF /* Frameworks */,
+				473FB4942C616783008399CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeptisGame;
+			packageProductDependencies = (
+				473FB4AE2C616BFC008399CF /* Alamofire */,
+				473FB4B32C616C21008399CF /* SwiftyJSON */,
+			);
+			productName = NeptisGame;
+			productReference = 473FB4962C616783008399CF /* NeptisGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		473FB48E2C616783008399CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					473FB4952C616783008399CF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 473FB4912C616783008399CF /* Build configuration list for PBXProject "NeptisGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 473FB48D2C616783008399CF;
+			packageReferences = (
+				473FB4AD2C616BFB008399CF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				473FB4B22C616C21008399CF /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 473FB4972C616783008399CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				473FB4952C616783008399CF /* NeptisGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		473FB4942C616783008399CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473FB4A12C616785008399CF /* Preview Assets.xcassets in Resources */,
+				473FB49E2C616785008399CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		473FB4922C616783008399CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473FB4B62C616EF0008399CF /* AppState.swift in Sources */,
+				473FB4BA2C616F94008399CF /* APIService.swift in Sources */,
+				473FB4BF2C6170A1008399CF /* Recipes.swift in Sources */,
+				473FB4B82C616F34008399CF /* RegisterView.swift in Sources */,
+				473FB4BC2C617069008399CF /* HomeView.swift in Sources */,
+				473FB49C2C616783008399CF /* LoginView.swift in Sources */,
+				473FB4C12C617102008399CF /* GameView.swift in Sources */,
+				473FB49A2C616783008399CF /* NeptisGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		473FB4A22C616785008399CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		473FB4A32C616785008399CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		473FB4A52C616785008399CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NeptisGame/Preview Content\"";
+				DEVELOPMENT_TEAM = L856TH7U8P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Orhan-Pojskic.NeptisGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		473FB4A62C616785008399CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NeptisGame/Preview Content\"";
+				DEVELOPMENT_TEAM = L856TH7U8P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Orhan-Pojskic.NeptisGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		473FB4912C616783008399CF /* Build configuration list for PBXProject "NeptisGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473FB4A22C616785008399CF /* Debug */,
+				473FB4A32C616785008399CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		473FB4A42C616785008399CF /* Build configuration list for PBXNativeTarget "NeptisGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473FB4A52C616785008399CF /* Debug */,
+				473FB4A62C616785008399CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		473FB4AD2C616BFB008399CF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		473FB4B22C616C21008399CF /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		473FB4AE2C616BFC008399CF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 473FB4AD2C616BFB008399CF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		473FB4B32C616C21008399CF /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 473FB4B22C616C21008399CF /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 473FB48E2C616783008399CF /* Project object */;
+}
